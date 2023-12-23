@@ -81,7 +81,7 @@ services:
       - /:/rootfs:ro
       - /var/run:/var/run:rw
       - /sys:/sys:ro
-      - /var/lib/docker/:/var/lib/docker:ro
+      - /mnt/wsl2_docker:/rootfs/var/lib/docker:ro
       - /var/run/docker.sock:/var/run/docker.sock:rw
     ports:
       - 8080:8080

@@ -25,7 +25,7 @@ logging.basicConfig(format='%(levelname)s:%(message)s')
 
 def get_opensearch(the_host="localhost"):
     host = the_host
-    port = 9200
+    port = 9201
     auth = ('admin', 'admin')
     client = OpenSearch(
         hosts=[{'host': host, 'port': port}],
