@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # this adds the ip addresses of the leader cluster nodes as seed nodes on the follower
-
+# https://stackoverflow.com/questions/26808855/how-to-format-a-bash-array-as-a-json-array
 json_array() {
   echo -n '['
   while [ $# -gt 0 ]; do
